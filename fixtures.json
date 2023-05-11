@@ -1,0 +1,28 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name_product": "Vestel WMW4100T0",
+      "description": "Стиральная машина Vestel WMW4100T0 с загрузкой до 4 кг белья отличается компактными размерами и востребованным набором функций для стирки вещей. ",
+      "picture": null,
+      "category": "washing machine",
+      "price": 15999,
+      "creation_date": "2023-05-11",
+      "last_modified_date": "2023-05-11"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name_product": "DEXP M6C7PD",
+      "description": "Посудомоечная машина DEXP M6C7PD рассчитана на 6 комплектов посуды.",
+      "picture": null,
+      "category": "dishwasher",
+      "price": 13999,
+      "creation_date": "2023-05-11",
+      "last_modified_date": "2023-05-11"
+    }
+  }
+]
