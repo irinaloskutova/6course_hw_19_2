@@ -1,12 +1,16 @@
+
+{% load media_path %}
+
+
 <div class="col">
     <div class="card shadow-sm">
-        <svg class="bd-placeholder-img card-img-top" width="100%" height="200"
-             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Эскиз"
-             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55625c"></rect>
-        </svg>
-        {#                        <p> <img src="{% mediapath object.image %}" width="150" height="120" alt="Картинка">#}
-        {#                        </p>#}
+{#        <svg class="bd-placeholder-img card-img-top" width="100%" height="200"#}
+{#             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Эскиз"#}
+{#             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>#}
+{#            <rect width="100%" height="100%" fill="#55625c"></rect>#}
+{#        </svg>#}
+        <p><img src="{% mediapath object.picture %}" width="150" height="120" alt="Картинка"/></p>
+
         <h2>{{ object.name_product }}
             {{ object.price }} руб.</h2>
         <div class="card-body">
@@ -20,3 +24,4 @@
         </div>
     </div>
 </div>
+
