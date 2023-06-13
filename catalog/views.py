@@ -39,9 +39,12 @@ def products(request):
     return render(request, 'catalog/products.html', context)
 
 
-def product_card(request):
+def product_card(request, pk):
+    product_item = Product.objects.get(pk=pk)
     context = {
-        'object_list': Product.objects.all(),
+        'object': product_item,
+    # context = {
+    #     'object_list': Product.objects.all(),
         'title': 'Карточка товара'
     }
     return render(request, 'catalog/product_card.html', context)
