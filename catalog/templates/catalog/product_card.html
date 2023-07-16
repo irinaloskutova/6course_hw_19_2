@@ -1,0 +1,21 @@
+{% extends 'catalog/base.html' %}
+{% load media_path %}
+
+{% block content %}
+
+
+<div class="col">
+    <div class="card shadow-sm">
+        <p><img src="{% mediapath object.picture %}" width="150" height="120" alt="Картинка"/></p>
+        <h2>{{ object.name_product }}
+            {{ object.price }} руб.</h2>
+        <div class="card-body">
+            <p class="card-text">{{ object.description }}</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

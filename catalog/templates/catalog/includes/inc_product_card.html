@@ -1,0 +1,15 @@
+{% load media_path %}
+
+<div class="col">
+    <div class="card shadow-sm">
+        <p><img src="{% mediapath object.picture %}" width="150" height="130" alt="Картинка"/></p>
+        <h2>{{ object.name_product }}
+            {{ object.price }} руб.</h2>
+        <div class="card-body">
+            <p class="card-text">{{ object.description|truncatechars:100 }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-secondary" href="{% url 'catalog:product_card' object.pk %}" role="button">Подробнее &raquo;</a>
+            </div>
+        </div>
+    </div>
+</div>
